@@ -4,7 +4,7 @@
 
 #Requires -RunAsAdministrator
 param(
-    $SourceDir = "C:\temp",
-    $TargetDir = "C:\temp\Result"
+    $SourceDir = "C:\PStemp",
+    $TargetDir = "C:\PStemp\Result"
 )
 Move-Item $SourceDir $TargetDir
