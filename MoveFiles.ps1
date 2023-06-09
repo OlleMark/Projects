@@ -4,8 +4,10 @@
 
 #Requires -RunAsAdministrator
 param(
-    [string]$SourceDir = "C:\PStemp",
-    [string]$TargetDir = "C:\PStemp\Result"
+    [Parameter(Position=0,mandatory=$true)]
+    [string]$SourceDir,
+    [Parameter(Position=1,mandatory=$true)]
+    [string]$TargetDir
 )
 foreach ($File in Get-ChildItem($SourceDir )) {
     $TargetFolders = $TargetDir.Split('\')
