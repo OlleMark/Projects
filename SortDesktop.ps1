@@ -1,3 +1,6 @@
+#Powershell script used sort directorys into folders named after the file type.
+#V0.1
+#Author: OlleMark
 
 param(
     [Parameter(Position=0, Mandatory)]
