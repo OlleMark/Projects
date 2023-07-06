@@ -1,5 +1,5 @@
 #Powershell script used sort directorys into folders named after the file type.
-#V0.1
+#V0.2
 #Author: OlleMark
 
 param(
@@ -56,6 +56,7 @@ function Get-Filecategory {
         }
         Blender = @{
             blend = 'blend'
+            blend1 = 'blend1'
         }
         Unity = @{
             unitypackage = 'unitypackage'
